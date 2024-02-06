@@ -1,0 +1,37 @@
+
+1. Create a maven project. Ekart App Automation.
+
+1.1 Add required dependencies on pom.xml.
+		initially these two
+		- selenium-java.xml.
+		- testng
+
+2. Create skeletons/packages.
+	src/main/java
+		Pages
+			LoginPage
+		factory
+		utils
+		exception
+		constant
+	
+	
+	
+	src/test/java
+		base
+			BaseTest
+		tests
+			LoginPageTest
+			
+			
+	
+	src/test/resources
+	
+		config
+		qa-config.properties
+		staging-config.properties
+		prod-config.properties
+		
+		test-runners
+			testng-sanity.xml
+			testng-regression.xml

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-02-06T15:17:39 IST" name="EKART TEST AUTOMATION" finished-at="2024-02-06T15:17:56 IST" duration-ms="16762">
+    <groups>
+    </groups>
+    <test started-at="2024-02-06T15:17:39 IST" name="Login test" finished-at="2024-02-06T15:17:56 IST" duration-ms="16762">
+      <class name="eKartAutoMation.tests.LoginPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:39 IST" name="setUp" finished-at="2024-02-06T15:17:55 IST" duration-ms="15680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="appLogoTest()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:55 IST" name="appLogoTest" finished-at="2024-02-06T15:17:55 IST" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLogoTest -->
+        <test-method signature="filterAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:55 IST" name="filterAvailablilityTest" finished-at="2024-02-06T15:17:55 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterAvailablilityTest -->
+        <test-method signature="isForgotPaswordLinkAvailble()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:55 IST" name="isForgotPaswordLinkAvailble" finished-at="2024-02-06T15:17:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isForgotPaswordLinkAvailble -->
+        <test-method signature="loginTitleTest()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:55 IST" name="loginTitleTest" finished-at="2024-02-06T15:17:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTitleTest -->
+        <test-method signature="loginURLTest()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:55 IST" name="loginURLTest" finished-at="2024-02-06T15:17:55 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginURLTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@121314f7]" started-at="2024-02-06T15:17:55 IST" name="tearDown" finished-at="2024-02-06T15:17:56 IST" duration-ms="937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- eKartAutoMation.tests.LoginPageTest -->
+    </test> <!-- Login test -->
+  </suite> <!-- EKART TEST AUTOMATION -->
+</testng-results>

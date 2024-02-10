@@ -13,6 +13,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.GeckoDriverInfo;
 
+import eKartAutoMation.constant.AppConstants;
 import eKartAutoMation.exception.AppException;
 
 public class DriverFactory {
@@ -22,25 +23,34 @@ public class DriverFactory {
 
 	public WebDriver initDriver() {
 
-		String browser = prop.getProperty("browser"); // "chrome";
+		String browser = prop.getProperty("browser");
 		System.out.println(browser);
 
 		switch (browser.toLowerCase().trim()) {
 		case "chrome":
 			driver = new ChromeDriver();
+			System.out.println(browser +" :browser is launched.");
 			break;
 		case "firefox":
 			driver=new FirefoxDriver();
+			System.out.println(browser +" :browser is launched.");
 			break;
 
 		case "edge":
 			driver = new EdgeDriver();
+			System.out.println(browser +" :browser is launched.");
 			break;
 
 		default:
+			System.out.println(browser +" :browser is unabled to launched. *** ERROR *** ");
 			throw new AppException("Invalid browser name selected: " + browser);
 		}
 
+		driver.manage().deleteAllCookies();
+		driver.manage().window().maximize();
+		driver.get(AppConstants.APP_URL);
+		System.out.println(AppConstants.APP_URL +" :: application login page is opened.");
+		
 		return driver;
 	}
 

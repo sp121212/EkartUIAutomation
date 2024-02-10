@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eKartAutoMation.tests.LoginPageTest">
+      <class name="eKartAutoMation.tests.CartPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="isForgotPaswordLinkAvailble"/>
-          <include name="appLogoTest"/>
           <include name="setUp"/>
-          <include name="loginTitleTest"/>
-          <include name="loginURLTest"/>
-          <include name="filterAvailablilityTest"/>
+          <include name="checkProdInfoOnCartPageTest" invocation-numbers="0 1 2"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- eKartAutoMation.tests.LoginPageTest -->
+      </class> <!-- eKartAutoMation.tests.CartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

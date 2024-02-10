@@ -4,40 +4,35 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import eKartAutoMation.base.BaseTest;
+import eKartAutoMation.constant.AppConstants;
 
 public class LoginPageTest extends BaseTest{
 	
-	
-	@Test
+	@Test(priority = 1)
 	public void loginTitleTest() {
-		
+		String loginPageTitle=loginPage.getLoginPageTitle();
+		Assert.assertEquals(loginPageTitle,"Let's Shop");
 	}
 	
 	
-	@Test
+	@Test(priority = 2)
 	public void loginURLTest() {
-		
+		String actURL=loginPage.getURL();
+		Assert.assertEquals(actURL, "https://rahulshettyacademy.com/client/auth/login");
 	}
 	
 	
-	
-	
-	@Test
+	@Test(priority = 3)
 	public void isForgotPaswordLinkAvailble() {
 		
+		boolean flag=loginPage.isForgotPasswordLinkAvailble();
+		Assert.assertTrue(flag);
 	}
 	
-	
-	@Test
-	public void appLogoTest() {
+	@Test(priority = 4)
+	public void doLoginTest() throws InterruptedException {
+		loginPage.doLogin(AppConstants.APP_USERNAME,AppConstants.APP_PASSWORD);
 		boolean flag=loginPage.isLogoPresent();
 		Assert.assertTrue(flag);
 	}
-	
-	@Test
-	public void filterAvailablilityTest() {
-		boolean flag=loginPage.isFilterOptionPresent();
-		Assert.assertTrue(flag);
-	}
-
 }

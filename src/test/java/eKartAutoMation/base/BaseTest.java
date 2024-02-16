@@ -15,29 +15,30 @@ import eKartAutoMation.pages.DashBoardPage;
 import eKartAutoMation.pages.LoginPage;
 
 public class BaseTest {
-	Properties prop=null;
-	WebDriver driver=null;
+	protected Properties prop=null;
+	protected WebDriver driver=null;
 	protected SoftAssert  softAssert=null;
 	public DriverFactory driverFactory=null;
 	protected LoginPage loginPage;
 	protected DashBoardPage dashBoardPage;
 	protected CartPage cartPage;
 	
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	@Parameters({"browser"})
 	public void setUp(@Optional("chrome") String browser) throws InterruptedException {
 		driverFactory=new DriverFactory();
-		prop=driverFactory.initProp("browser", browser);
-		
+		prop=driverFactory.initProp();
+		prop.setProperty("browser", browser);
 		driver=driverFactory.initDriver();
 		loginPage=new LoginPage(driver);
 		softAssert=new SoftAssert();
 	}
 	
 	
-	@AfterTest(enabled = true)
+	@AfterTest(alwaysRun = true)
 	public void tearDown() {
 		driverFactory.quitDriver();
+//		driver.quit();
 	}
 	
 	

@@ -7,19 +7,21 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.GeckoDriverInfo;
+import org.openqa.selenium.io.FileHandler;
 
-import eKartAutoMation.constant.AppConstants;
 import eKartAutoMation.exception.AppException;
 
 public class DriverFactory {
 
 	public WebDriver driver = null;
 	public Properties prop = null;
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 
 	public WebDriver initDriver() {
 
@@ -28,51 +30,94 @@ public class DriverFactory {
 
 		switch (browser.toLowerCase().trim()) {
 		case "chrome":
-			driver = new ChromeDriver();
-			System.out.println(browser +" :browser is launched.");
+			tlDriver.set(new ChromeDriver());
+//			driver = new ChromeDriver();
+			System.out.println(browser + " :browser is launched.");
 			break;
 		case "firefox":
-			driver=new FirefoxDriver();
-			System.out.println(browser +" :browser is launched.");
+			tlDriver.set(new FirefoxDriver());
+//			driver=new FirefoxDriver();
+			System.out.println(browser + " :browser is launched.");
 			break;
 
 		case "edge":
-			driver = new EdgeDriver();
-			System.out.println(browser +" :browser is launched.");
+			tlDriver.set(new EdgeDriver());
+//			driver = new EdgeDriver();
+			System.out.println(browser + " :browser is launched.");
 			break;
 
 		default:
-			System.out.println(browser +" :browser is unabled to launched. *** ERROR *** ");
+			System.out.println(browser + " :browser is unabled to launched. *** ERROR *** ");
 			throw new AppException("Invalid browser name selected: " + browser);
 		}
 
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.get(AppConstants.APP_URL);
-		System.out.println(AppConstants.APP_URL +" :: application login page is opened.");
-		
-		return driver;
+		getDriver().manage().deleteAllCookies();
+		getDriver().manage().window().maximize();
+		getDriver().get(prop.getProperty("url"));
+		System.out.println(prop.getProperty("url") + " :: application login page is opened.");
+
+		return getDriver();
+	}
+	
+	
+	static int count=0;
+	public static WebDriver getDriver() {
+		return tlDriver.get();
 	}
 
+	
 	public void quitDriver() {
-		driver.quit();
+		getDriver().quit();
 	}
 
-	public Properties initProp(String key, String value) {
+	public Properties initProp() {
 		prop = new Properties();
-		InputStream input;
+		InputStream input = null;
+		String env = System.getProperty("env"); // QA OR STAGING OR PROD
+		System.out.println("ENV NAME: " + env);
 		try {
-			input = new FileInputStream(new File("./src/test/resources/config.properties"));
+			if(env==null) {
+				input = new FileInputStream(new File("./src/test/resources/config/qa-config.properties"));
+			} else if (env.toLowerCase().trim().equals("stage")) {
+				input = new FileInputStream(new File("./src/test/resources/config/stage-config.properties"));
+			} else if (env.toLowerCase().trim().equals("prod")) {
+				input = new FileInputStream(new File("./src/test/resources/config/prod-config.properties"));
+			}else if (env.toLowerCase().trim().equals("qa")){
+				input = new FileInputStream(new File("./src/test/resources/config/qa-config.properties"));
+			}else {
+				throw new AppException("Wrong env is passed. "+ env);
+			}
 			prop.load(input);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		prop.setProperty(key, value);
 
 		return prop;
 
 	}
+	
+	/**
+	 * Take screenshot
+	 * @param methodName
+	 * @return
+	 */
+	public static String getScreenshot(String methodName) {
+		File srcFile= ((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
+		String path=System.getProperty("user.dir")+"\\screenshot\\"+methodName+"_"+System.currentTimeMillis()+".png";
+		System.out.println("path>>>>  "+path);
+		File destination = new File(path);
+		
+		try {
+			FileHandler.copy(srcFile, destination);
+		}catch(IOException  e) {
+			e.printStackTrace();
+		}
+		
+		return path;
+	}
+	
+	
 
 }

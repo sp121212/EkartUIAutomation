@@ -2,75 +2,12 @@
 <testng-results ignored="0" total="22" passed="22" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-10T17:31:06 IST" name="EKART TEST AUTOMATION" finished-at="2024-02-10T17:31:35 IST" duration-ms="29253">
+  <suite started-at="2024-02-15T08:28:01 IST" name="EKART TEST AUTOMATION" finished-at="2024-02-15T08:28:17 IST" duration-ms="15669">
     <groups>
     </groups>
-    <test started-at="2024-02-10T17:31:06 IST" name="Dashboard Page Test" finished-at="2024-02-10T17:31:21 IST" duration-ms="14869">
-      <class name="eKartAutoMation.tests.DashBoardPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:06 IST" name="setUp" finished-at="2024-02-10T17:31:12 IST" duration-ms="6030" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:12 IST" name="setUp" finished-at="2024-02-10T17:31:14 IST" duration-ms="1516" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="appLogoTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:14 IST" name="appLogoTest" finished-at="2024-02-10T17:31:17 IST" duration-ms="3132" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- appLogoTest -->
-        <test-method signature="cartLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:17 IST" name="cartLinkAvailablilityTest" finished-at="2024-02-10T17:31:17 IST" duration-ms="300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cartLinkAvailablilityTest -->
-        <test-method signature="categoryAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:17 IST" name="categoryAvailablilityTest" finished-at="2024-02-10T17:31:18 IST" duration-ms="894" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- categoryAvailablilityTest -->
-        <test-method signature="filterAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:18 IST" name="filterAvailablilityTest" finished-at="2024-02-10T17:31:18 IST" duration-ms="218" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- filterAvailablilityTest -->
-        <test-method signature="homeLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:18 IST" name="homeLinkAvailablilityTest" finished-at="2024-02-10T17:31:18 IST" duration-ms="176" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- homeLinkAvailablilityTest -->
-        <test-method signature="orderLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:18 IST" name="orderLinkAvailablilityTest" finished-at="2024-02-10T17:31:19 IST" duration-ms="354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderLinkAvailablilityTest -->
-        <test-method signature="priceRangeAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:19 IST" name="priceRangeAvailablilityTest" finished-at="2024-02-10T17:31:19 IST" duration-ms="128" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- priceRangeAvailablilityTest -->
-        <test-method signature="searchForAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:19 IST" name="searchForAvailablilityTest" finished-at="2024-02-10T17:31:19 IST" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForAvailablilityTest -->
-        <test-method signature="signoutLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:19 IST" name="signoutLinkAvailablilityTest" finished-at="2024-02-10T17:31:19 IST" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signoutLinkAvailablilityTest -->
-        <test-method signature="subCategoryAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:19 IST" name="subCategoryAvailablilityTest" finished-at="2024-02-10T17:31:19 IST" duration-ms="101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- subCategoryAvailablilityTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@5d0bf09b]" started-at="2024-02-10T17:31:19 IST" name="tearDown" finished-at="2024-02-10T17:31:21 IST" duration-ms="1454" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- eKartAutoMation.tests.DashBoardPageTest -->
-    </test> <!-- Dashboard Page Test -->
-    <test started-at="2024-02-10T17:31:06 IST" name="Login Page Test" finished-at="2024-02-10T17:31:21 IST" duration-ms="15382">
+    <test started-at="2024-02-15T08:28:01 IST" name="Login Page Test" finished-at="2024-02-15T08:28:07 IST" duration-ms="5777">
       <class name="eKartAutoMation.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.LoginPageTest@130c12b7]" started-at="2024-02-10T17:31:06 IST" name="setUp" finished-at="2024-02-10T17:31:15 IST" duration-ms="8935" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.LoginPageTest@64c781a9]" started-at="2024-02-15T08:28:01 IST" name="setUp" finished-at="2024-02-15T08:28:05 IST" duration-ms="4054" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,31 +18,94 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginTitleTest()[pri:1, instance:eKartAutoMation.tests.LoginPageTest@130c12b7]" started-at="2024-02-10T17:31:15 IST" name="loginTitleTest" finished-at="2024-02-10T17:31:15 IST" duration-ms="90" status="PASS">
+        <test-method signature="loginTitleTest()[pri:1, instance:eKartAutoMation.tests.LoginPageTest@64c781a9]" started-at="2024-02-15T08:28:05 IST" name="loginTitleTest" finished-at="2024-02-15T08:28:05 IST" duration-ms="51" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method signature="loginURLTest()[pri:2, instance:eKartAutoMation.tests.LoginPageTest@130c12b7]" started-at="2024-02-10T17:31:15 IST" name="loginURLTest" finished-at="2024-02-10T17:31:15 IST" duration-ms="17" status="PASS">
+        <test-method signature="loginURLTest()[pri:2, instance:eKartAutoMation.tests.LoginPageTest@64c781a9]" started-at="2024-02-15T08:28:05 IST" name="loginURLTest" finished-at="2024-02-15T08:28:06 IST" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginURLTest -->
-        <test-method signature="isForgotPaswordLinkAvailble()[pri:3, instance:eKartAutoMation.tests.LoginPageTest@130c12b7]" started-at="2024-02-10T17:31:15 IST" name="isForgotPaswordLinkAvailble" finished-at="2024-02-10T17:31:15 IST" duration-ms="185" status="PASS">
+        <test-method signature="isForgotPaswordLinkAvailble()[pri:3, instance:eKartAutoMation.tests.LoginPageTest@64c781a9]" started-at="2024-02-15T08:28:06 IST" name="isForgotPaswordLinkAvailble" finished-at="2024-02-15T08:28:06 IST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isForgotPaswordLinkAvailble -->
-        <test-method signature="doLoginTest()[pri:4, instance:eKartAutoMation.tests.LoginPageTest@130c12b7]" started-at="2024-02-10T17:31:15 IST" name="doLoginTest" finished-at="2024-02-10T17:31:18 IST" duration-ms="3145" status="PASS">
+        <test-method signature="doLoginTest()[pri:4, instance:eKartAutoMation.tests.LoginPageTest@64c781a9]" started-at="2024-02-15T08:28:06 IST" name="doLoginTest" finished-at="2024-02-15T08:28:07 IST" duration-ms="1155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLoginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@130c12b7]" started-at="2024-02-10T17:31:18 IST" name="tearDown" finished-at="2024-02-10T17:31:21 IST" duration-ms="2942" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.LoginPageTest@64c781a9]" started-at="2024-02-15T08:28:07 IST" name="tearDown" finished-at="2024-02-15T08:28:07 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- eKartAutoMation.tests.LoginPageTest -->
     </test> <!-- Login Page Test -->
-    <test started-at="2024-02-10T17:31:06 IST" name="Cart Page Test" finished-at="2024-02-10T17:31:35 IST" duration-ms="29253">
+    <test started-at="2024-02-15T08:28:01 IST" name="Dashboard Page Test" finished-at="2024-02-15T08:28:10 IST" duration-ms="8330">
+      <class name="eKartAutoMation.tests.DashBoardPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:02 IST" name="setUp" finished-at="2024-02-15T08:28:05 IST" duration-ms="3803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:05 IST" name="setUp" finished-at="2024-02-15T08:28:06 IST" duration-ms="658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="appLogoTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:06 IST" name="appLogoTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="3045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appLogoTest -->
+        <test-method signature="cartLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="cartLinkAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartLinkAvailablilityTest -->
+        <test-method signature="categoryAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="categoryAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryAvailablilityTest -->
+        <test-method signature="filterAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="filterAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterAvailablilityTest -->
+        <test-method signature="homeLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="homeLinkAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homeLinkAvailablilityTest -->
+        <test-method signature="orderLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="orderLinkAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderLinkAvailablilityTest -->
+        <test-method signature="priceRangeAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="priceRangeAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="39" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priceRangeAvailablilityTest -->
+        <test-method signature="searchForAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="searchForAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchForAvailablilityTest -->
+        <test-method signature="signoutLinkAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="signoutLinkAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="32" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signoutLinkAvailablilityTest -->
+        <test-method signature="subCategoryAvailablilityTest()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="subCategoryAvailablilityTest" finished-at="2024-02-15T08:28:09 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subCategoryAvailablilityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.DashBoardPageTest@40c2ce52]" started-at="2024-02-15T08:28:09 IST" name="tearDown" finished-at="2024-02-15T08:28:10 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- eKartAutoMation.tests.DashBoardPageTest -->
+    </test> <!-- Dashboard Page Test -->
+    <test started-at="2024-02-15T08:28:01 IST" name="Cart Page Test" finished-at="2024-02-15T08:28:17 IST" duration-ms="15669">
       <class name="eKartAutoMation.tests.CartPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:06 IST" name="setUp" finished-at="2024-02-10T17:31:26 IST" duration-ms="20091" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:01 IST" name="setUp" finished-at="2024-02-15T08:28:09 IST" duration-ms="7811" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,31 +116,31 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:26 IST" name="setUp" finished-at="2024-02-10T17:31:27 IST" duration-ms="1077" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:09 IST" name="setUp" finished-at="2024-02-15T08:28:10 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="isBuyNowButtonAvailable()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:27 IST" name="isBuyNowButtonAvailable" finished-at="2024-02-10T17:31:27 IST" duration-ms="0" status="PASS">
+        <test-method signature="isBuyNowButtonAvailable()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:10 IST" name="isBuyNowButtonAvailable" finished-at="2024-02-15T08:28:10 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isBuyNowButtonAvailable -->
-        <test-method signature="isRemoveFromCartOptionisAvailable()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:27 IST" name="isRemoveFromCartOptionisAvailable" finished-at="2024-02-10T17:31:27 IST" duration-ms="0" status="PASS">
+        <test-method signature="isRemoveFromCartOptionisAvailable()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:10 IST" name="isRemoveFromCartOptionisAvailable" finished-at="2024-02-15T08:28:10 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isRemoveFromCartOptionisAvailable -->
-        <test-method signature="pageTitleTest()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:27 IST" name="pageTitleTest" finished-at="2024-02-10T17:31:27 IST" duration-ms="15" status="PASS">
+        <test-method signature="pageTitleTest()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:10 IST" name="pageTitleTest" finished-at="2024-02-15T08:28:10 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageTitleTest -->
-        <test-method signature="pageURL()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:27 IST" name="pageURL" finished-at="2024-02-10T17:31:27 IST" duration-ms="28" status="PASS">
+        <test-method signature="pageURL()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:10 IST" name="pageURL" finished-at="2024-02-15T08:28:10 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageURL -->
-        <test-method signature="validateSumOfTheProduct()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:27 IST" name="validateSumOfTheProduct" finished-at="2024-02-10T17:31:27 IST" duration-ms="0" status="PASS">
+        <test-method signature="validateSumOfTheProduct()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:10 IST" name="validateSumOfTheProduct" finished-at="2024-02-15T08:28:10 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateSumOfTheProduct -->
-        <test-method signature="checkProdInfoOnCartPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:27 IST" name="checkProdInfoOnCartPageTest" data-provider="testData" finished-at="2024-02-10T17:31:30 IST" duration-ms="2530" status="PASS">
+        <test-method signature="checkProdInfoOnCartPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:12 IST" name="checkProdInfoOnCartPageTest" data-provider="excelTestData" finished-at="2024-02-15T08:28:13 IST" duration-ms="1338" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -161,7 +161,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkProdInfoOnCartPageTest -->
-        <test-method signature="checkProdInfoOnCartPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:30 IST" name="checkProdInfoOnCartPageTest" data-provider="testData" finished-at="2024-02-10T17:31:31 IST" duration-ms="1352" status="PASS">
+        <test-method signature="checkProdInfoOnCartPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:13 IST" name="checkProdInfoOnCartPageTest" data-provider="excelTestData" finished-at="2024-02-15T08:28:15 IST" duration-ms="1452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,7 +182,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkProdInfoOnCartPageTest -->
-        <test-method signature="checkProdInfoOnCartPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:31 IST" name="checkProdInfoOnCartPageTest" data-provider="testData" finished-at="2024-02-10T17:31:33 IST" duration-ms="2249" status="PASS">
+        <test-method signature="checkProdInfoOnCartPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:15 IST" name="checkProdInfoOnCartPageTest" data-provider="excelTestData" finished-at="2024-02-15T08:28:16 IST" duration-ms="1503" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -203,7 +203,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkProdInfoOnCartPageTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.CartPageTest@1c5920df]" started-at="2024-02-10T17:31:33 IST" name="tearDown" finished-at="2024-02-10T17:31:35 IST" duration-ms="1842" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eKartAutoMation.tests.CartPageTest@4997552e]" started-at="2024-02-15T08:28:16 IST" name="tearDown" finished-at="2024-02-15T08:28:17 IST" duration-ms="942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

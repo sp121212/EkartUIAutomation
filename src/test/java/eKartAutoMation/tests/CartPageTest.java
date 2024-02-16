@@ -9,13 +9,13 @@ import org.testng.annotations.Test;
 
 import eKartAutoMation.base.BaseTest;
 import eKartAutoMation.constant.AppConstants;
+import eKartAutoMation.utils.ExcelUtil;
 
 public class CartPageTest extends BaseTest {
 
 	@BeforeClass
-	public void setUp() throws InterruptedException {
-		dashBoardPage = loginPage.doLogin(AppConstants.APP_USERNAME, AppConstants.APP_PASSWORD);
-
+	public void setUp() {
+		dashBoardPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 //		dashBoardPage.clickAddToCart("IPHONE 13 PRO");
 		cartPage = dashBoardPage.navigateToCartPage();
 	}
@@ -33,7 +33,8 @@ public class CartPageTest extends BaseTest {
 	}
 
 	
-	@Test(priority = 1, dataProvider="testData")
+	@Test(priority = 1, dataProvider="excelTestData")
+//	@Test(priority = 1, dataProvider="testData")
 	public void checkProdInfoOnCartPageTest(String itemName,String price,String isInStuck) {
 		
 		dashBoardPage.navigateToHomePage();
@@ -72,15 +73,18 @@ public class CartPageTest extends BaseTest {
 	
 	@DataProvider(name = "testData")
 	public Object[][] testData() {
-
 		Object[][] obj = { 
-							{ "IPHONE 13 PRO", "$ 231500", "In Stock" }, 
-							{ "ZARA COAT 3", "$ 31500", "In Stock" },
-							{ "ADIDAS ORIGINAL", "$ 31500", "In Stock" }, 
+							{ "IPHONE 13 PRO", "$ 231500", "In Stock11" }, 
+							{ "ZARA COAT 3", "$ 31500", "In Stock11" },
+							{ "ADIDAS ORIGINAL", "$ 31500", "In Stock11" }, 
 						  };
-
-		
 		return obj;
 	}
-
+	
+	@DataProvider(name="excelTestData")
+	public Object[][] excelTestData() {
+		Object[][] data=ExcelUtil.readTestData(AppConstants.EXCEL_ITEM_DETAILS_SHEET);
+		return data;
+	}
+	
 }

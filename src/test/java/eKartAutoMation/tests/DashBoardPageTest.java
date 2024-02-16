@@ -8,13 +8,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import eKartAutoMation.base.BaseTest;
-import eKartAutoMation.constant.AppConstants;
 
 public class DashBoardPageTest extends BaseTest {
 
 	@BeforeClass
 	public void setUp() throws InterruptedException {
-		dashBoardPage = loginPage.doLogin(AppConstants.APP_USERNAME, AppConstants.APP_PASSWORD);
+		dashBoardPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	}
 
 	@Test
@@ -76,7 +75,7 @@ public class DashBoardPageTest extends BaseTest {
 		boolean flag = dashBoardPage.isTheSignoutLinkAvailable();
 		Assert.assertTrue(flag);
 	}
-
+	
 	@Test(enabled = false)
 	public void addItemsInCartTest() {
 		MultiValuedMap<String, String> cartItemsDetails = dashBoardPage.getItemDetails();

@@ -4,8 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import eKartAutoMation.base.BaseTest;
-import eKartAutoMation.constant.AppConstants;
 
+
+//@Listeners(ExtentReportListener.class)
 public class LoginPageTest extends BaseTest{
 	
 	@Test(priority = 1)
@@ -31,7 +32,7 @@ public class LoginPageTest extends BaseTest{
 	
 	@Test(priority = 4)
 	public void doLoginTest() throws InterruptedException {
-		loginPage.doLogin(AppConstants.APP_USERNAME,AppConstants.APP_PASSWORD);
+		loginPage.doLogin(prop.getProperty("username")  , prop.getProperty("password"));
 		boolean flag=loginPage.isLogoPresent();
 		Assert.assertTrue(flag);
 	}

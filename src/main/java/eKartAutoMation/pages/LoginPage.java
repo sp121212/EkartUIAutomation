@@ -25,7 +25,7 @@ public class LoginPage {
 	
 	
 	//Locators
-	By userEmailLoc=By.id("userEmail");
+	By userEmailLoc=By.id("userEmail--");
 	By userPasswordLoc=By.id("userPassword");
 	By loginButtonLoc=By.id("login");
 	By logoLoc=By.xpath("//h3[text()='Automation']");

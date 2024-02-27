@@ -3,7 +3,7 @@
 <suite thread-count="4" parallel="tests" name="Failed suite [EKART TEST AUTOMATION]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="eKartAutoMation.listeners.ExtentReportListener"/>
-    <listener class-name="eKartAutoMation.listeners.AnotationTransformer"/>
+    <listener class-name="eKartAutoMation.listeners.AllureReportListener"/>
   </listeners>
   <test thread-count="4" parallel="tests" name="Login Page Test(failed)">
     <parameter name="browser" value="edge"/>
@@ -11,8 +11,8 @@
       <class name="eKartAutoMation.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="doLoginTest"/>
           <include name="setUp"/>
+          <include name="doLoginTest"/>
         </methods>
       </class> <!-- eKartAutoMation.tests.LoginPageTest -->
     </classes>
@@ -30,10 +30,10 @@
           <include name="filterAvailablilityTest"/>
           <include name="setUp"/>
           <include name="categoryAvailablilityTest"/>
-          <include name="searchForAvailablilityTest"/>
           <include name="homeLinkAvailablilityTest"/>
-          <include name="cartLinkAvailablilityTest"/>
+          <include name="searchForAvailablilityTest"/>
           <include name="signoutLinkAvailablilityTest"/>
+          <include name="cartLinkAvailablilityTest"/>
           <include name="orderLinkAvailablilityTest"/>
         </methods>
       </class> <!-- eKartAutoMation.tests.DashBoardPageTest -->
@@ -45,8 +45,8 @@
       <class name="eKartAutoMation.tests.CartPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="isBuyNowButtonAvailable"/>
           <include name="pageURL"/>
+          <include name="isBuyNowButtonAvailable"/>
           <include name="setUp"/>
           <include name="validateSumOfTheProduct"/>
           <include name="pageTitleTest"/>

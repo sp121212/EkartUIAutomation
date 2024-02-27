@@ -19,9 +19,9 @@
 		</classes>
 	</test>
 
-	<test name="Dashboard Page Test">
+	<!-- <test name="Dashboard Page Test">
 		<parameter name="browser" value="chrome"></parameter>
-		<!-- <parameter name="browser_version" value="117"></parameter> -->
+		<parameter name="browser_version" value="117"></parameter>
 		<classes>
 			<class name="eKartAutoMation.tests.DashBoardPageTest"></class>
 		</classes>
@@ -29,10 +29,10 @@
 
 	<test name="Cart Page Test">
 		<parameter name="browser" value="firefox"></parameter>
-		<!-- <parameter name="browser_version" value="117"></parameter> -->
+		<parameter name="browser_version" value="117"></parameter>
 		<classes>
 			<class name="eKartAutoMation.tests.CartPageTest"></class>
 		</classes>
-	</test>
+	</test> -->
 
 </suite>

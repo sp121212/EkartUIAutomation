@@ -93,7 +93,8 @@
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
 						<suiteXmlFile>
-							src/test/resources/testrunners/testng-sanity.xml</suiteXmlFile>
+							<!--src/test/resources/testrunners/testng-sanity.xml</suiteXmlFile>-->
+							src/test/resources/testrunners/testng-regression.xml</suiteXmlFile>
 						<!-- <suiteXmlFile>${suiteXmlFile}</suiteXmlFile> -->
 					</suiteXmlFiles>
 					

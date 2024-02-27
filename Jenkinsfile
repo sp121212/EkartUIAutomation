@@ -38,7 +38,7 @@ pipeline
         stage('SANITY Automation Tests') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/sp121212/EkartUIAutomation'
+                    git 'https://github.com/sp121212/EkartUIAutomation.git'
                      bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng-sanity.xml"
                     
                 }
@@ -82,7 +82,7 @@ pipeline
         stage('Regression  Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/sp121212/EkartUIAutomation'
+                    git 'https://github.com/sp121212/EkartUIAutomation.git'
                      bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng-regression.xml"
                     
                 }

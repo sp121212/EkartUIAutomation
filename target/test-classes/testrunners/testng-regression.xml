@@ -11,7 +11,7 @@
 	</listeners>
 
 	<test name="Login Page Test">
-		<parameter name="browser" value="edge"></parameter>
+		<parameter name="browser" value="chrome"></parameter>
 		<!-- <parameter name="browser_version" value="117"></parameter> -->
 		<classes>
 			<class name="eKartAutoMation.tests.LoginPageTest">
@@ -20,7 +20,7 @@
 	</test>
 
 	<test name="Dashboard Page Test">
-		<parameter name="browser" value="chrome"></parameter>
+		<parameter name="browser" value="edge"></parameter>
 		<!-- <parameter name="browser_version" value="117"></parameter> -->
 		<classes>
 			<class name="eKartAutoMation.tests.DashBoardPageTest"></class>

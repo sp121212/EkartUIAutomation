@@ -16,9 +16,9 @@ public class AppConstants {
 	
 	
 	public static final long SHORT_WAIT_IN_SEC=2;
-	public static final long SHORT_WAIT=2000;
-	public static final long MEDIUM_WAIT=5000;
-	public static final long LONG_WAIT=10000;
+	public static final long SHORT_WAIT=200;
+	public static final long MEDIUM_WAIT=500;
+	public static final long LONG_WAIT=1000;
 	
 	
 	public static final String LOGIN_PAGE_TITLE="";
